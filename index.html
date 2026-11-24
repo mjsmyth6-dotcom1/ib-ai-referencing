@@ -420,7 +420,7 @@ ol.answers { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
   <div class="card-body">
   <p>Eight questions to see how much has stuck. You'll see the answer as soon as you pick one.</p>
   <div class="surface">
-    <div class="surface-head"><span>Eight questions</span><span class="score" id="quizScore">0 of 8 correct</span></div>
+    <div class="surface-head"><span>Eight questions</span><span><span class="score" id="quizScore">0 of 8 correct</span> <button class="reset" id="quizReset">Reset</button></span></div>
     <div id="quizList" class="quiz-grid"></div>
   </div>
   </div>
@@ -784,6 +784,7 @@ Can you explain how to read a confidence interval?</textarea></div>
     $('#quizScore').textContent = right + ' of ' + quiz.length + ' correct';
     prog.quiz = Object.keys(qState).length; prog.quizRight = right; drawProgress();
   }
+  $('#quizReset').addEventListener('click', () => { Object.keys(qState).forEach(k => delete qState[k]); store.set('iswa-ai-quiz', qState); renderQuiz(); });
   renderQuiz();
  
   /* citation builder */
