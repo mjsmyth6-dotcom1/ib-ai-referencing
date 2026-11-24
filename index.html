@@ -71,7 +71,7 @@ svg.i { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor;
 .logo-rev { display: none; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo-col { display: none; } :root:not([data-theme="light"]) .logo-rev { display: block; } }
 :root[data-theme="dark"] .logo-col { display: none; } :root[data-theme="dark"] .logo-rev { display: block; }
-
+ 
 /* sidebar */
 .side { position: fixed; inset: 0 auto 0 0; width: var(--side-w); background: var(--surface); border-right: 1px solid var(--outline); display: flex; flex-direction: column; gap: 1.5rem; padding: 1.5rem 1.25rem; overflow-y: auto; z-index: 30; }
 .side .brand { padding: 0.25rem 0.5rem 0.5rem; }
@@ -94,7 +94,7 @@ svg.i { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor;
 .help-card .dot { width: 44px; height: 44px; border-radius: 50%; background: var(--blue); color: #FFFFFF; display: grid; place-items: center; }
 .help-card strong { color: var(--strong); font-size: 0.95rem; }
 .help-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.5; }
-
+ 
 /* top bar */
 .app { margin-left: var(--side-w); min-height: 100vh; }
 .top { position: sticky; top: 0; z-index: 20; background: var(--surface); border-bottom: 1px solid var(--outline); display: flex; align-items: center; gap: 1rem; padding: 0.9rem max(16px, 2rem) 0.9rem max(16px, 2rem); min-height: 72px; }
@@ -106,7 +106,7 @@ svg.i { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor;
 .top-toggle { display: none; }
 .who { display: flex; align-items: center; gap: 0.75rem; color: var(--strong); font-weight: 600; font-size: 0.92rem; white-space: nowrap; }
 .avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--primary-container); color: var(--on-primary-container); display: grid; place-items: center; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.02em; }
-
+ 
 /* grid + cards */
 main { padding: 2rem max(16px, 2rem) 3rem; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 1.5rem; max-width: 1440px; }
 .card { grid-column: span 12; background: var(--surface); border-radius: var(--r-lg); box-shadow: var(--shadow); container-type: inline-size; min-width: 0; }
@@ -118,7 +118,7 @@ main { padding: 2rem max(16px, 2rem) 3rem; display: grid; grid-template-columns:
 .card-head .label { margin-bottom: 0.15rem; }
 .card-body { padding: 1.5rem 1.75rem 1.75rem; display: grid; gap: 1.1rem; align-content: start; }
 @container (max-width: 520px) { .card-head { padding: 1.1rem 1.15rem; } .card-body { padding: 1.15rem 1.15rem 1.4rem; } }
-
+ 
 /* welcome card */
 .welcome .card-body { padding: 2rem 2rem 2rem; gap: 1rem; }
 .welcome h1 { font-size: clamp(1.75rem, 3.2vw, 2.4rem); font-weight: 800; line-height: 1.12; }
@@ -128,7 +128,7 @@ main { padding: 2rem max(16px, 2rem) 3rem; display: grid; grid-template-columns:
 .pill.solid { background: var(--blue); border-color: var(--blue); color: #FFFFFF; }
 .pill:hover { border-color: var(--heading); }
 @container (max-width: 520px) { .welcome .card-body { padding: 1.4rem 1.2rem; } }
-
+ 
 /* bold accent card */
 .accent { background: var(--blue); color: #FFFFFF; position: relative; overflow: hidden; }
 .accent::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 28%; background: rgb(0 48 106 / 0.45); pointer-events: none; }
@@ -138,7 +138,7 @@ main { padding: 2rem max(16px, 2rem) 3rem; display: grid; grid-template-columns:
 .accent .cite { font-size: 0.85rem; color: #DCE6F3; font-weight: 600; }
 :root[data-theme="dark"] .accent { background: #0B3F86; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .accent { background: #0B3F86; } }
-
+ 
 /* stat tiles */
 .tile { display: flex; align-items: center; gap: 1.1rem; padding: 1.5rem 1.6rem; text-decoration: none; color: inherit; min-height: 112px; }
 .tile:hover { box-shadow: 0 8px 28px rgb(74 71 68 / 0.12); }
@@ -153,7 +153,7 @@ main { padding: 2rem max(16px, 2rem) 3rem; display: grid; grid-template-columns:
 .tile .num { font-size: 1.45rem; font-weight: 800; color: var(--strong); line-height: 1.15; font-variant-numeric: tabular-nums; }
 .tile .num small { font-size: 0.95rem; font-weight: 600; color: var(--muted); }
 .tile .cap { font-size: 0.92rem; color: var(--muted); line-height: 1.35; }
-
+ 
 /* progress donut */
 .donut-wrap { display: grid; justify-items: center; gap: 1.25rem; padding-top: 0.5rem; }
 .donut { position: relative; width: 168px; height: 168px; }
@@ -169,7 +169,7 @@ main { padding: 2rem max(16px, 2rem) 3rem; display: grid; grid-template-columns:
 .legend li b { margin-left: auto; color: var(--strong); font-variant-numeric: tabular-nums; }
 .legend .sw { width: 10px; height: 10px; border-radius: 50%; flex: none; }
 .progress-note { font-size: 0.85rem; color: var(--muted); text-align: center; }
-
+ 
 /* rule rows */
 .rows { display: grid; }
 .row { display: grid; grid-template-columns: 11rem 1fr; gap: 1rem; padding-block: 1rem; border-bottom: 1px solid var(--outline); }
@@ -182,7 +182,7 @@ details.src { margin-top: 0.35rem; }
 details.src summary { cursor: pointer; color: var(--muted); font-size: 0.88rem; font-weight: 600; min-height: 32px; }
 details.src p { font-size: 0.93rem; color: var(--muted); margin-top: 0.25rem; font-style: italic; }
 @container (max-width: 560px) { .row { grid-template-columns: 1fr; gap: 0.25rem; } }
-
+ 
 /* inner panels (the interactive tools) */
 .surface { border: 1px solid var(--outline-strong); border-radius: var(--r-md); overflow: hidden; background: var(--surface); }
 .surface-head { background: var(--subtle); color: var(--strong); padding: 0.75rem 1.1rem; font-weight: 700; font-size: 0.92rem; display: flex; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; align-items: center; border-bottom: 1px solid var(--outline-strong); }
@@ -190,7 +190,7 @@ details.src p { font-size: 0.93rem; color: var(--muted); margin-top: 0.25rem; fo
 .score { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--heading); }
 .reset { background: var(--surface); border: 1.5px solid var(--outline-strong); color: var(--strong); border-radius: var(--r-full); padding: 0.3rem 0.95rem; font-size: 0.85rem; font-weight: 600; min-height: 36px; margin-left: 0.5rem; }
 .reset:hover { border-color: var(--heading); }
-
+ 
 /* scenario sort */
 .scen-list { display: grid; }
 .scen { padding: 1.1rem 1.25rem; border-bottom: 1px solid var(--outline); display: grid; gap: 0.7rem; }
@@ -210,7 +210,7 @@ details.src p { font-size: 0.93rem; color: var(--muted); margin-top: 0.25rem; fo
 .chip.dep { background: transparent; border: 1.5px solid var(--outline-strong); color: var(--ink); }
 .mark { font-weight: 700; color: var(--strong); }
 .ref { font-size: 0.85rem; color: var(--muted); }
-
+ 
 /* quiz */
 .quiz-grid { display: grid; grid-template-columns: 1fr; }
 @container (min-width: 900px) { .quiz-grid { grid-template-columns: 1fr 1fr; } .quiz-grid .q:nth-child(odd) { border-right: 1px solid var(--outline); } }
@@ -222,7 +222,7 @@ details.src p { font-size: 0.93rem; color: var(--muted); margin-top: 0.25rem; fo
 .opt input { margin-top: 0.35rem; accent-color: #004EA8; }
 .opt.right { border-color: var(--heading); background: var(--primary-container); color: var(--on-primary-container); }
 .opt.wrong { border-color: var(--on-accent-container); background: var(--accent-container); color: var(--on-accent-container); }
-
+ 
 /* builders */
 .builder { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); }
 .builder .inputs { padding: 1.25rem; border-right: 1px solid var(--outline-strong); display: grid; gap: 0.85rem; align-content: start; margin: 0; }
@@ -247,20 +247,20 @@ details.src p { font-size: 0.93rem; color: var(--muted); margin-top: 0.25rem; fo
 .checks { display: grid; gap: 0.4rem; }
 .checks label { display: flex; gap: 0.6rem; align-items: flex-start; min-height: 36px; font-size: 0.97rem; color: var(--ink); font-weight: 400; cursor: pointer; }
 .checks input, .field .checks input { margin-top: 0.35rem; accent-color: #004EA8; width: 1.05rem; height: 1.05rem; min-height: 0; padding: 0; flex: none; }
-
+ 
 /* spot the problems */
 .doc-line .bad { color: var(--on-accent-container); font-style: italic; }
 .reveal { justify-self: start; background: var(--blue); color: #FFFFFF; border: 0; border-radius: var(--r-full); padding: 0.55rem 1.3rem; min-height: 44px; font-weight: 700; }
 .reveal:hover { background: var(--blue-deep); }
 ol.answers { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
-
+ 
 /* tabs */
 .tabs { display: flex; flex-wrap: wrap; gap: 0.4rem; background: var(--canvas); padding: 0.3rem; border-radius: var(--r-md); }
 .tab { background: transparent; border: 0; border-radius: var(--r-full); padding: 0.45rem 1rem; min-height: 40px; font-weight: 600; font-size: 0.9rem; color: var(--muted); }
 .tab[aria-selected="true"] { background: var(--surface); color: var(--heading); box-shadow: 0 2px 8px rgb(74 71 68 / 0.12); }
 .panel { padding-top: 1.1rem; display: grid; gap: 0.9rem; }
 .panel ul { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.5rem; }
-
+ 
 /* checklist */
 .cl label { display: grid; grid-template-columns: auto 9rem 1fr; gap: 0.9rem; align-items: start; padding-block: 0.85rem; border-bottom: 1px solid var(--outline); cursor: pointer; }
 .cl label:last-child { border-bottom: 0; }
@@ -268,20 +268,20 @@ ol.answers { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
 .cl strong { font-weight: 700; color: var(--heading); }
 @container (max-width: 600px) { .cl label { grid-template-columns: auto 1fr; gap: 0.25rem 0.9rem; } .cl label span { grid-column: 2; } }
 .done-msg { font-weight: 700; color: var(--heading); min-height: 1.6em; }
-
+ 
 /* teacher notes */
 .teacher { display: grid; gap: 0.4rem; background: var(--teacher-bg); border-radius: var(--r-md); padding: 1rem 1.2rem; }
 .teacher[hidden] { display: none; }
 .teacher .label { color: var(--heading); }
 .teacher p, .teacher li { font-size: 0.95rem; color: var(--ink); }
 .teacher ul { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.35rem; }
-
+ 
 /* sources */
 .sources { display: grid; gap: 0.7rem; margin: 0; padding-left: 0; list-style: none; }
 .sources li { padding-left: 2rem; text-indent: -2rem; font-size: 0.93rem; }
-
+ 
 .foot { grid-column: span 12; color: var(--muted); font-size: 0.85rem; padding: 0.5rem 0.25rem 0; }
-
+ 
 /* phones and small tablets: sidebar becomes a drawer */
 .scrim { display: none; }
 @media (max-width: 1023px) {
@@ -307,7 +307,7 @@ ol.answers { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
 @media (max-width: 1023px) { .side { visibility: hidden; transition: transform 0.25s ease, visibility 0s linear 0.25s; } .side.open { visibility: visible; transition: transform 0.25s ease; } }
 @media (min-width: 1024px) { .foot { display: none; } }
 </style>
-
+ 
 </head>
 <body>
 <div class="scrim" id="scrim"></div>
@@ -321,7 +321,7 @@ ol.answers { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
     <p>If you have any questions about using AI in your IB work, have a chat with your supervisor, subject teacher or DP coordinator.</p>
   </div>
 </aside>
-
+ 
 <div class="app">
 <header class="top">
   <button class="menu-btn" id="menuBtn" aria-label="Open the section menu" aria-expanded="false" aria-controls="side"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
@@ -331,7 +331,7 @@ ol.answers { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
     <div class="who"><div class="avatar" aria-hidden="true">DP</div><span>Year 11 and 12</span></div>
   </div>
 </header>
-
+ 
 <main>
 <section class="card span-8 welcome" id="start">
   <div class="card-body">
@@ -342,43 +342,43 @@ ol.answers { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
     <div class="pill-row"><a class="pill solid" href="#sort">Start with the scenarios</a><a class="pill" href="#builder">Go to the citation builder</a></div>
     <div class="teacher" data-teacher hidden>
     <div class="label">For teachers · about 3 minutes</div>
-    <p>Ask the class what “even only in part” means for them. You could also ask whether using AI to check grammar counts as “work produced in part” by AI. The Economics IA example in the scenario sort covers this.</p>
+    <p>Ask the class what “even only in part” means for them. You could also ask whether using AI to check grammar counts as “work produced in part” by AI. The IB is clear about this for language acquisition, which the Spanish B example in the scenario sort covers. For other subjects its scenarios document isn't consistent, so check with your coordinator.</p>
   </div>
   </div>
 </section>
-
+ 
 <section class="card span-4 accent" aria-label="What the IB says">
   <div class="card-body">
     <div class="eyebrow">What the IB says</div>
     <p class="quote">“The IB does not regard any work produced, even only in part, by such tools to be their own.”</p>
-    <p class="cite">IB Academic integrity policy · Appendix 6 · p. 54</p>
+    <p class="cite">International Baccalaureate Organization [IB], 2023, p. 54</p>
   </div>
 </section>
-
+ 
 <a class="card span-3 tile" href="#sort"><div class="ic blue"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="m15 15 6 6"/><path d="m4 4 5 5"/></svg></div><div><div class="num" id="tSort">0<small>/13</small></div><div class="cap" id="tSortCap">Scenarios sorted</div></div></a>
 <a class="card span-3 tile" href="#quiz"><div class="ic sky"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M9.2 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></div><div><div class="num" id="tQuiz">0<small>/8</small></div><div class="cap">Quiz answers correct</div></div></a>
 <a class="card span-3 tile" href="#check"><div class="ic orange"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m8 12 3 3 5-6"/></svg></div><div><div class="num" id="tCl">0<small>/5</small></div><div class="cap">Checklist items ticked</div></div></a>
 <a class="card span-3 tile" href="#assess"><div class="ic warm"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></div><div><div class="num">4</div><div class="cap">Assessments covered</div></div></a>
-
+ 
 <section class="card span-8" id="rules">
   <div class="card-head"><div><div class="label">01 · What the IB has said</div><h2>What the IB has said about AI</h2></div></div>
   <div class="card-body">
   <p>Each of these comes from the IB's own documents. Open “Source” to see the exact wording.</p>
   <div class="rows">
-    <div class="row"><strong>AI isn't banned</strong><div><p>The IB isn't banning AI. It expects you to use it ethically and be open about it.</p><details class="src"><summary>Source</summary><p>“The IB will not ban the use of AI software.” Academic integrity policy, Appendix 6.2, p. 53.</p></details></div></div>
-    <div class="row"><strong>Crediting AI</strong><div><p>If AI-generated text, images or graphs end up in your work, you need to credit the tool in your writing and in your bibliography.</p><details class="src"><summary>Source</summary><p>“The software must be credited in the body of the text and appropriately referenced in the bibliography.” Appendix 6, p. 54.</p></details></div></div>
-    <div class="row"><strong>Prompt and date</strong><div><p>When you cite AI in your writing, use quotation marks and include the prompt you gave it and the date of the response.</p><details class="src"><summary>Source</summary><p>“The in-text citation should contain quotation marks using the referencing style already in use by the school and the citation should also contain the prompt given to the AI tool and the date the AI generated the text.” Appendix 6, p. 55.</p></details></div></div>
-    <div class="row"><strong>How you used it</strong><div><p>If you used AI as a tool, for example to brainstorm or plan, you still need to acknowledge it. Give enough detail, including your prompts, for a reader to understand how you used it and what it added to your work.</p><details class="src"><summary>Source</summary><p>“This includes use of any artificial intelligence (AI) tools, whether used as an assistive tool or as a source of material or information used in the work. The acknowledgement should include enough detail (including the prompt/s used) to enable a reader to understand how the tool has been used and what it has contributed to the work overall.” Effective citing and referencing (IB, 2025), p. 3. The IB's scenarios document (2024) adds that “a short statement after the end of the work describing how AI was used in its creation is sufficient.”</p></details></div></div>
-    <div class="row"><strong>Checking what AI tells you</strong><div><p>AI can get things wrong or make things up. Check its information against other sources, and cite the source you used to check it.</p><details class="src"><summary>Source</summary><p>“It is important to check and validate information generated by AI, perhaps by corroborating it with information gathered from other sources.” Extended essay guide (2025), p. 94. Effective citing and referencing (2025), p. 8, says the use of the AI tool may be mentioned as part of the methodology, “and the source used to verify its output should be cited and referenced.”</p></details></div></div>
-    <div class="row"><strong class="key">Being open about it</strong><div><p>Hiding your AI use isn't acceptable, even if what you used it for was fine. You need to tell the teacher who authenticates your work.</p><details class="src"><summary>Source</summary><p>Evaluating 13 scenarios, scenario 12. Students must disclose AI use to the teacher authenticating the work, even when no referencing is required.</p></details></div></div>
+    <div class="row"><strong>AI isn't banned</strong><div><p>The IB isn't banning AI. It expects you to use it ethically and be open about it.</p><details class="src"><summary>Source</summary><p>“The IB will not ban the use of AI software” (IB, 2023, p. 53).</p></details></div></div>
+    <div class="row"><strong>Crediting AI</strong><div><p>If AI-generated text, images or graphs end up in your work, you need to credit the tool in your writing and in your bibliography.</p><details class="src"><summary>Source</summary><p>“The software must be credited in the body of the text and appropriately referenced in the bibliography” (IB, 2023, p. 54).</p></details></div></div>
+    <div class="row"><strong>Prompt and date</strong><div><p>When you cite AI in your writing, use quotation marks and include the prompt you gave it and the date of the response.</p><details class="src"><summary>Source</summary><p>“The in-text citation should contain quotation marks using the referencing style already in use by the school and the citation should also contain the prompt given to the AI tool and the date the AI generated the text” (IB, 2023, p. 55).</p></details></div></div>
+    <div class="row"><strong>How you used it</strong><div><p>If you used AI as a tool, for example to brainstorm or plan, you still need to acknowledge it. Give enough detail, including your prompts, for a reader to understand how you used it and what it added to your work.</p><details class="src"><summary>Source</summary><p>“This includes use of any artificial intelligence (AI) tools, whether used as an assistive tool or as a source of material or information used in the work. The acknowledgement should include enough detail (including the prompt/s used) to enable a reader to understand how the tool has been used and what it has contributed to the work overall” (IB, 2025a, p. 3). The IB's scenarios document adds that “a short statement after the end of the work describing how AI was used in its creation is sufficient” (IB, 2024, p. 5).</p></details></div></div>
+    <div class="row"><strong>Checking what AI tells you</strong><div><p>AI can get things wrong or make things up. Check its information against other sources, and cite the source you used to check it.</p><details class="src"><summary>Source</summary><p>“It is important to check and validate information generated by AI, perhaps by corroborating it with information gathered from other sources” (IB, 2025b, p. 94). <i>Effective citing and referencing</i> says the use of the AI tool may be mentioned as part of the methodology, “and the source used to verify its output should be cited and referenced” (IB, 2025a, p. 8).</p></details></div></div>
+    <div class="row"><strong class="key">Being open about it</strong><div><p>Hiding your AI use isn't acceptable, even if what you used it for was fine. You need to tell the teacher who authenticates your work.</p><details class="src"><summary>Source</summary><p>Students must disclose AI use to the teacher authenticating the work, even when no referencing is required (IB, 2024, Scenario 12).</p></details></div></div>
   </div>
   <div class="teacher" data-teacher hidden>
     <div class="label">For teachers · about 4 minutes</div>
-    <p>Students are most likely to miss the point about how they used AI. Brainstorming, asking for a structure or getting a concept explained still needs to be acknowledged, even if no AI words end up in the final work. A good question to ask is who they should go to if they're not sure whether to cite something. The policy says students should seek guidance from their teachers when doubts arise about referencing (Academic integrity policy, p. 46).</p>
+    <p>Students are most likely to miss the point about how they used AI. Brainstorming, asking for a structure or getting a concept explained still needs to be acknowledged, even if no AI words end up in the final work. A good question to ask is who they should go to if they're not sure whether to cite something. The policy says students should seek guidance from their teachers when doubts arise about referencing (IB, 2023, p. 46).</p>
   </div>
   </div>
 </section>
-
+ 
 <section class="card span-4" aria-labelledby="progH">
   <div class="card-head"><h2 id="progH">Your progress</h2></div>
   <div class="card-body">
@@ -396,21 +396,21 @@ ol.answers { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
     </div>
   </div>
 </section>
-
+ 
 <section class="card " id="sort">
   <div class="card-head"><div><div class="label">02 · What's OK and what isn't?</div><h2>What would you do?</h2></div></div>
   <div class="card-body">
-  <p>Each of these is based on an example the IB has worked through. Decide whether you think it's fine, not acceptable or depends, and then see what the IB says.</p>
+  <p>Each of these is based on an example the IB has worked through. Decide whether you think it's fine or not acceptable, and then see what the IB says. If you want to read the IB's own documents, they're linked in the <a href="#sources">sources</a> at the bottom of the page.</p>
   <div class="surface">
-    <div class="surface-head"><span>Fine, not acceptable or it depends?</span><span><span class="score" id="sortScore">0 of 13 answered</span> <button class="reset" id="sortReset">Reset</button></span></div>
+    <div class="surface-head"><span>Fine or not acceptable?</span><span><span class="score" id="sortScore">0 of 13 answered</span> <button class="reset" id="sortReset">Reset</button></span></div>
     <div class="scen-list" id="scenList"></div>
   </div>
   <div class="teacher" data-teacher hidden>
     <div class="label">For teachers · about 10 minutes</div>
     <ul>
       <li>I'd run these as a hands-up vote first and then reveal the answer, because the reasoning matters more than the verdict.</li>
-      <li>Several of the IB's answers depend on what the student did next. A good extension is to have students change one of the “not acceptable” examples so it becomes acceptable.</li>
-      <li>These come from the IB's “Evaluating 13 scenarios of AI in student coursework” (2024). The IB says context matters for several of them.</li>
+      <li>A good extension is to have students change one of the “not acceptable” examples so it becomes acceptable.</li>
+      <li>These come from the IB's <i>Evaluating 13 scenarios of artificial intelligence (AI) in student coursework</i> (IB, 2024). The IB says context matters for some of its scenarios, so these are worded so that the IB documents give a clear answer.</li>
     </ul>
   </div>
   </div>
@@ -428,7 +428,7 @@ ol.answers { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
 <section class="card " id="builder">
   <div class="card-head"><div><div class="label">04 · Referencing AI</div><h2>Citation builder</h2></div></div>
   <div class="card-body">
-  <p>The IB doesn't require a particular referencing style. Any style is fine as long as you use one style consistently through the whole piece of work. We use APA 7 at ISWA, so this builder follows the APA 7 examples in the IB's own Effective citing and referencing guide. An example is already filled in below. Change the details and the citation will update as you type.</p>
+  <p>The IB doesn't require a particular referencing style. Any style is fine as long as you use one style consistently through the whole piece of work. We use APA 7 at ISWA, so this builder follows the APA 7 examples in the IB's own <i>Effective citing and referencing</i> guide (IB, 2025a). An example is already filled in below. Change the details and the citation will update as you type.</p>
   <div class="surface">
     <div class="surface-head"><span>Build an AI citation</span>
       <div class="seg" role="group" aria-label="Referencing style" id="styleSeg">
@@ -459,9 +459,9 @@ ol.answers { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
   <div class="teacher" data-teacher hidden>
     <div class="label">For teachers · about 6 minutes</div>
     <ul>
-      <li>The format matches the APA 7 examples in the IB's Effective citing and referencing (December 2025, pp. 5-6). The company is the author, followed by the year, the tool and version, and [Artificial intelligence system].</li>
+      <li>The format matches the APA 7 examples in the IB's <i>Effective citing and referencing</i> (IB, 2025a, pp. 5-6). The company is the author, followed by the year, the tool and version, and [Artificial intelligence system].</li>
       <li>Appendix 6 asks for the prompt and the date in the in-text citation, so in this format both go in the student's sentence.</li>
-      <li>The IB also notes that reference generators, including AI tools, may not produce full or accurate results, so students should always check anything they generate (Effective citing and referencing, p. 8).</li>
+      <li>The IB also notes that reference generators, including AI tools, may not produce full or accurate results, so students should always check anything they generate (IB, 2025a, p. 8).</li>
     </ul>
   </div>
   </div>
@@ -469,7 +469,7 @@ ol.answers { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
 <section class="card " id="statement">
   <div class="card-head"><div><div class="label">05 · When AI helped along the way</div><h2>Acknowledging how you used AI</h2></div></div>
   <div class="card-body">
-  <p>If you used AI as a tool, the IB still wants you to acknowledge it, with enough detail (including your prompts) for a reader to understand how you used it and what it added. The IB's scenarios document says a short statement after the end of the work is enough, and the Effective citing and referencing guide says the methodology section of a research essay may also suit. Neither sets a format, so the builder below is just one way to do it.</p>
+  <p>If you used AI as a tool, the IB still wants you to acknowledge it, with enough detail (including your prompts) for a reader to understand how you used it and what it added. The IB's scenarios document says a short statement after the end of the work is enough (IB, 2024, p. 5), and <i>Effective citing and referencing</i> says the methodology section of a research essay may also suit. Neither sets a format, so the builder below is just one way to do it.</p>
   <div class="surface">
     <div class="surface-head"><span>Build your statement</span></div>
     <div class="builder">
@@ -508,7 +508,7 @@ Can you explain how to read a confidence interval?</textarea></div>
   <div class="teacher" data-teacher hidden>
     <div class="label">For teachers · about 4 minutes</div>
     <p>Have students write a statement for a recent piece of work (even if they didn't use AI), then swap with a partner and check it covers the tool, the date, the prompts, what it was used for and what they did with it.</p>
-    <p>The IB doesn't give one place for it. The scenarios document suggests after the end of the work, and Effective citing and referencing suggests the methodology section of a research essay. The same guide says full AI conversations shouldn't normally go in an appendix unless students are told to include them. A school-wide format would help keep things consistent.</p>
+    <p>The IB doesn't give one place for it. The scenarios document suggests after the end of the work (IB, 2024, p. 5), and <i>Effective citing and referencing</i> suggests the methodology section of a research essay (IB, 2025a, p. 8). The same guide says full AI conversations shouldn't normally go in an appendix unless students are told to include them. A school-wide format would help keep things consistent.</p>
   </div>
   </div>
 </section>
@@ -531,9 +531,9 @@ Can you explain how to read a confidence interval?</textarea></div>
           <li><b>No date</b> the response was generated.</li>
           <li><b>Incomplete reference.</b> No company, year, version or web address, and it doesn't follow a recognised style.</li>
           <li><b>Whose thinking is it?</b> This sentence carries the argument of the paragraph, and the IB doesn't regard any work produced by AI, even in part, as the student's own. A teacher would want to talk to this student about where the analysis came from.</li>
-          <li><b>Did they check it?</b> AI can get things wrong. If the student checked this against a history source, that source should be cited and referenced too (Effective citing and referencing, p. 8).</li>
+          <li><b>Did they check it?</b> AI can get things wrong. If the student checked this against a history source, that source should be cited and referenced too (IB, 2025a, p. 8).</li>
         </ol>
-        <p class="note" style="margin-top:0.8rem">Following the IB's APA 7 examples, the corrected sentence would read “When prompted with ‘Why did the Treaty of Versailles contribute to the rise of extremism in Germany?’ on 5 May 2026, ChatGPT responded that the treaty left Germany ‘economically humiliated and politically unstable’ (OpenAI, 2026).” The reference list entry would be OpenAI. (2026). ChatGPT (May 5 version) [Artificial intelligence system]. https://chatgpt.com</p>
+        <p class="note" style="margin-top:0.8rem">Following the IB's APA 7 examples, the corrected sentence would read “When prompted with ‘Why did the Treaty of Versailles contribute to the rise of extremism in Germany?’ on 5 May 2026, ChatGPT responded that the treaty left Germany ‘economically humiliated and politically unstable’ (OpenAI, 2026).” The reference list entry would be OpenAI. (2026). <i>ChatGPT</i> (May 5 version) [Artificial intelligence system]. https://chatgpt.com</p>
       </div>
     </div>
   </div>
@@ -551,25 +551,25 @@ Can you explain how to read a confidence interval?</textarea></div>
     </div>
     <div class="panel" role="tabpanel" id="p-ee" aria-labelledby="t-ee">
       <ul>
-        <li>Using AI to write your essay and presenting it as your own is dishonest. Material from AI can be one of your resources, as long as you acknowledge and cite it (EE guide, p. 94).</li>
-        <li>Check anything AI tells you against other sources. Because AI can “hallucinate”, the guide suggests using ordinary search engines for the investigative stage of your research (EE guide, pp. 94-95).</li>
-        <li>Don't get AI to write your research question. Talk to your supervisor first. Once you've agreed a subject and topic, you can ask AI for example questions and then work on them with your supervisor (scenario 4).</li>
-        <li>Your 500-word reflective statement on the RPF, and what you say in your three reflection sessions, need to be your own. The IB treats an AI-written reflection as fabrication (scenario 11).</li>
-        <li>Your supervisor can read and comment on one draft only, and you need to do your own proofreading (EE guide, pp. 94 and 105).</li>
-        <li>Citations, references and your bibliography don't count towards the 4,000 words, but quotations do (EE guide, pp. 87-88). References for online sources must include the date you accessed them (p. 92).</li>
-        <li>Record source details in your RRS as you go. For AI, that means the tool, your prompt and the date (EE guide, p. 95).</li>
-        <li>Your supervisor confirms your essay is your own, partly through the viva voce at the end, so be ready to talk through any part of it (EE guide, p. 105, and Appendix 6, p. 54).</li>
+        <li>Using AI to write your essay and presenting it as your own is dishonest. Material from AI can be one of your resources, as long as you acknowledge and cite it (IB, 2025b, p. 94).</li>
+        <li>Check anything AI tells you against other sources. Because AI can “hallucinate”, the guide suggests using ordinary search engines for the investigative stage of your research (IB, 2025b, pp. 94-95).</li>
+        <li>Don't get AI to write your research question. Talk to your supervisor first. Once you've agreed a subject and topic, you can ask AI for example questions and then work on them with your supervisor (IB, 2024, Scenario 4).</li>
+        <li>Your 500-word reflective statement on the RPF, and what you say in your three reflection sessions, need to be your own. The IB treats an AI-written reflection as fabrication (IB, 2024, Scenario 11).</li>
+        <li>Your supervisor can read and comment on one draft only, and you need to do your own proofreading (IB, 2025b, pp. 94, 105).</li>
+        <li>Citations, references and your bibliography don't count towards the 4,000 words, but quotations do (IB, 2025b, pp. 87-88). References for online sources must include the date you accessed them (IB, 2025b, p. 92).</li>
+        <li>Record source details in your RRS as you go. For AI, that means the tool, your prompt and the date (IB, 2025b, p. 95).</li>
+        <li>Your supervisor confirms your essay is your own, partly through the viva voce at the end, so be ready to talk through any part of it (IB, 2023, p. 54, 2025b, p. 105).</li>
       </ul>
-      <div class="teacher" data-teacher hidden><div class="label">For teachers</div><p>These points are checked against the Extended essay guide (first assessment 2027). For more on AI, the guide refers students to Appendix 6 of the Academic integrity policy and an IB infographic, “The IB and artificial intelligence tools”. The guide doesn't say where a statement of AI use should go in the essay or whether it counts towards the word count, so check with your EE coordinator.</p></div>
+      <div class="teacher" data-teacher hidden><div class="label">For teachers</div><p>These points are checked against the <i>Extended essay guide</i> (IB, 2025b). For more on AI, the guide refers students to Appendix 6 of the <i>Academic integrity policy</i> (IB, 2023) and an IB infographic, “The IB and artificial intelligence tools”. The guide doesn't say where a statement of AI use should go in the essay or whether it counts towards the word count, so check with your EE coordinator.</p></div>
     </div>
     <div class="panel" role="tabpanel" id="p-iax" aria-labelledby="t-ia" hidden></div>
     <div class="panel" role="tabpanel" id="p-ia" aria-labelledby="t-ia" hidden>
       <ul>
-        <li>Credit any AI-generated text, images or graphs in your work (Appendix 6, p. 54).</li>
-        <li>In language acquisition courses such as Language B you can't use tools that improve your sentences. The IB also says you can't write in one language and translate it for submission (Appendix 6, p. 55, and scenario 8).</li>
+        <li>Credit any AI-generated text, images or graphs in your work (IB, 2023, p. 54).</li>
+        <li>In language acquisition courses such as Language B you can't use tools that improve your sentences. The IB also says you can't write in one language and translate it for submission (IB, 2023, p. 55, 2024, Scenario 8).</li>
         <li>Spell checkers and bilingual dictionaries are fine in other subjects.</li>
-        <li>If you use a translation tool for any part of your work, mention it in your text. It doesn't usually need a reference (Effective citing and referencing, p. 8).</li>
-        <li>If your IA has a methodology section, that can be a good place to mention AI you used as a tool (Effective citing and referencing, p. 8).</li>
+        <li>If you use a translation tool for any part of your work, mention it in your text. It doesn't usually need a reference (IB, 2025a, p. 8).</li>
+        <li>If your IA has a methodology section, that can be a good place to mention AI you used as a tool (IB, 2025a, p. 8).</li>
         <li>The IB's AI guidance is general, so check with your subject teacher about anything specific to your subject.</li>
       </ul>
       <div class="teacher" data-teacher hidden><div class="label">For teachers</div><p>The IB's AI guidance is general and doesn't give subject-by-subject IA rules, so check your subject guide for anything specific.</p></div>
@@ -577,7 +577,7 @@ Can you explain how to read a confidence interval?</textarea></div>
     <div class="panel" role="tabpanel" id="p-tke" aria-labelledby="t-tke" hidden>
       <ul>
         <li>Your arguments, examples and analysis need to be your own, because the IB doesn't regard work produced by AI, even in part, as yours.</li>
-        <li>Asking AI for counter-positions is fine if you then investigate them yourself (scenario 2).</li>
+        <li>Asking AI for counter-positions is fine if you then investigate them yourself (IB, 2024, Scenario 2).</li>
         <li>If AI-generated text, images or graphs appear in your essay, credit them with quotation marks, the prompt and the date, using one referencing style consistently.</li>
       </ul>
     </div>
@@ -585,7 +585,7 @@ Can you explain how to read a confidence interval?</textarea></div>
       <ul>
         <li>Your commentary needs to be your own work.</li>
         <li>If you're thinking about using an AI-generated image as one of your objects, check with your TOK teacher first. The IB's AI guidance doesn't say whether this is allowed, and if you do use one it needs to be credited like any other AI-generated image.</li>
-        <li>For anything shown visually, the IB suggests a label or caption, or a short citation with the full reference listed elsewhere (Effective citing and referencing, p. 3).</li>
+        <li>For anything shown visually, the IB suggests a label or caption, or a short citation with the full reference listed elsewhere (IB, 2025a, p. 3).</li>
       </ul>
       <div class="teacher" data-teacher hidden><div class="label">For teachers</div><p>The TOK guide wasn't one of the documents this was checked against, so please confirm anything TOK-specific there.</p></div>
     </div>
@@ -604,38 +604,41 @@ Can you explain how to read a confidence interval?</textarea></div>
     <label><input type="checkbox" id="cl5"><strong>Explaining it</strong><span>You could talk your teacher through any part of your work without your notes.</span></label>
   </div>
   <p class="done-msg" id="clMsg" aria-live="polite"></p>
-  <p>Before your teacher signs off your work, the IB expects them to have seen it develop over time and to be confident you can explain it. It also needs to be clear which ideas are yours, and the quality should fit with what they know you can do (Appendix 6, p. 54). If they aren't convinced the work is yours, it can't be submitted.</p>
+  <p>Before your teacher signs off your work, the IB expects them to have seen it develop over time and to be confident you can explain it. It also needs to be clear which ideas are yours, and the quality should fit with what they know you can do (IB, 2023, p. 54). If they aren't convinced the work is yours, it can't be submitted.</p>
   </div>
 </section>
 <section class="card span-6" id="sources">
   <div class="card-head"><div><div class="label">Sources</div><h2>Where this comes from</h2></div></div>
   <div class="card-body">
+  <p>Everything on this page is based on these IB documents. If you want to see what the IB says for yourself, follow the links.</p>
   <ul class="sources">
-    <li>International Baccalaureate Organization. (2023). <i>Academic integrity policy</i> (Appendix 6: Guidance on the use of artificial intelligence tools, pp. 53-55). Published October 2019, updated March 2023. <a href="https://ibo.org/globalassets/new-structure/programmes/shared-resources/pdfs/academic-integrity-policy-en.pdf">ibo.org</a></li>
-    <li>International Baccalaureate Organization. (2024). <i>Evaluating 13 scenarios of artificial intelligence (AI) in student coursework.</i></li>
-    <li>International Baccalaureate Organization. (2025). <i>Effective citing and referencing.</i> Published December 2025.</li>
-    <li>International Baccalaureate Organization. (2025). <i>Extended essay guide</i> (first assessment 2027). Published February 2025.</li>
+    <li>International Baccalaureate Organization. (2023). <i>Academic integrity policy</i>. <a href="https://ibo.org/globalassets/new-structure/programmes/shared-resources/pdfs/academic-integrity-policy-en.pdf">https://ibo.org/globalassets/new-structure/programmes/shared-resources/pdfs/academic-integrity-policy-en.pdf</a></li>
+    <li>International Baccalaureate Organization. (2024). <i>Evaluating 13 scenarios of artificial intelligence (AI) in student coursework</i>. <a href="https://ibmidatlantic.org/AI_Malpractice_Scenarios.pdf">https://ibmidatlantic.org/AI_Malpractice_Scenarios.pdf</a></li>
+    <li>International Baccalaureate Organization. (2025a). <i>Effective citing and referencing</i>.</li>
+    <li>International Baccalaureate Organization. (2025b). <i>Extended essay guide: First assessment 2027</i>. <a href="https://www.ibo.org/globalassets/new-structure/university-admission/pdfs/subject-guides/extended-essay-first-assessment-2027-guide-sbs.pdf">https://www.ibo.org/globalassets/new-structure/university-admission/pdfs/subject-guides/extended-essay-first-assessment-2027-guide-sbs.pdf</a></li>
   </ul>
+  <p>References follow APA 7, which ISWA uses. In-text citations shorten the author to IB. The AI guidance is Appendix 6 of the academic integrity policy (pp. 53-55, updated March 2023). <i>Effective citing and referencing</i> was published in December 2025 and the <i>Extended essay guide</i> in February 2025. Ask your teacher or the library for a copy of <i>Effective citing and referencing</i>, because I couldn't find it online on the IB's website.</p>
   <div class="teacher" data-teacher hidden>
     <div class="label">For teachers · things the IB guidance doesn't cover</div>
     <ul>
-      <li>The IB doesn't require a particular referencing style. Appendix 6 (2023) mentions the style already used by the school, and Effective citing and referencing (2025) says schools should allow students to choose their own style as long as they use it consistently. ISWA uses APA 7.</li>
+      <li>The IB doesn't require a particular referencing style. Appendix 6 mentions the style already used by the school (IB, 2023, p. 55), and <i>Effective citing and referencing</i> says schools should allow students to choose their own style as long as they use it consistently. ISWA uses APA 7.</li>
       <li>The IB says AI used as a tool needs acknowledging, with prompts, but doesn't give a format. A statement after the end of the work or a mention in the methodology are both suggested.</li>
-      <li>The scenarios document (2024) suggests giving the teacher a transcript of AI use as an annex, while Effective citing and referencing (2025) says AI conversations shouldn't normally go in appendices unless instructed. This page follows the newer guide and tells students to keep their chats in case their teacher asks.</li>
+      <li>The scenarios document suggests giving the teacher a transcript of AI use as an annex (IB, 2024, p. 5), while <i>Effective citing and referencing</i> (IB, 2025a) says AI conversations shouldn't normally go in appendices unless instructed. This page follows the newer guide and tells students to keep their chats in case their teacher asks.</li>
+      <li>The scenarios document isn't always consistent between its main text and its summary table. Scenario 5 (an AI-written example of the set essay) opens with “This is not acceptable” but the table says context matters, so this page marks it as not acceptable. The text calls scenario 9 (grammar suggestions) “generally acceptable” unless there are marks for grammar, and scenario 10 (AI feedback) “discouraged”, while the table lists both as not acceptable for IB assessment. Because of that, the scenario sort only uses grammar help in Spanish B, where Appendix 6 is clear, and marks AI feedback on an IA draft as not acceptable (IB, 2023, p. 55; IB, 2024, pp. 3-4, 6).</li>
       <li>There's nothing on using AI-generated images as TOK exhibition objects.</li>
       <li>I could only find copies of the 13 scenarios document hosted by schools, not on ibo.org, so it's worth checking it against the version your coordinator has. It carries an IB copyright notice (2024).</li>
-      <li>The EE points are checked against the Extended essay guide (first assessment 2027). The TOK guide wasn't checked, so please confirm anything TOK-specific there.</li>
+      <li>The EE points are checked against the <i>Extended essay guide</i> (IB, 2025b). The TOK guide wasn't checked, so please confirm anything TOK-specific there.</li>
       <li>The general AI guidance doesn't cover subject-specific IA rules, such as for code or images.</li>
       <li>This page reflects what I could find published as at November 2026.</li>
     </ul>
   </div>
   </div>
 </section>
-
+ 
 <p class="foot" id="mobileFoot">If you have any questions about using AI in your IB work, have a chat with your supervisor, subject teacher or DP coordinator.</p>
 </main>
 </div>
-
+ 
 <script>
 (function () {
   const $ = s => document.querySelector(s);
@@ -643,7 +646,7 @@ Can you explain how to read a confidence interval?</textarea></div>
     get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } },
     set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
   };
-
+ 
   /* progress tiles and donut */
   const prog = { sort: 0, match: 0, quiz: 0, quizRight: 0, cl: 0 };
   const C = 2 * Math.PI * 50, TOTAL = 26;
@@ -664,7 +667,7 @@ Can you explain how to read a confidence interval?</textarea></div>
     });
     set('dPct', Math.round((prog.sort + prog.quiz + prog.cl) / TOTAL * 100) + '%');
   }
-
+ 
   /* drawer and section tracking */
   const side = $('#side'), scrim = $('#scrim'), menuBtn = $('#menuBtn');
   function setDrawer(open) { side.classList.toggle('open', open); scrim.classList.toggle('open', open); menuBtn.setAttribute('aria-expanded', String(open)); if (open) { const a = side.querySelector('nav a'); a && a.focus(); } }
@@ -681,7 +684,7 @@ Can you explain how to read a confidence interval?</textarea></div>
     const io = new IntersectionObserver(es => { es.forEach(e => { if (e.isIntersecting) setActive(e.target.id); }); }, { rootMargin: '-90px 0px -65% 0px' });
     navLinks.forEach(a => { const s = document.getElementById(a.getAttribute('href').slice(1)); s && io.observe(s); });
   }
-
+ 
   /* teacher notes */
   const tBtns = [...document.querySelectorAll('.teacher-toggle')];
   function setTeacher(on) {
@@ -690,35 +693,35 @@ Can you explain how to read a confidence interval?</textarea></div>
   }
   tBtns.forEach(b => b.addEventListener('click', () => { const on = b.getAttribute('aria-pressed') !== 'true'; setTeacher(on); store.set('iswa-ai-teacher', on); }));
   setTeacher(store.get('iswa-ai-teacher') === true);
-
+ 
   /* scenario sort */
-  const LABEL = { fine: 'Fine', no: 'Not acceptable', dep: 'It depends' };
+  const LABEL = { fine: 'Fine', no: 'Not acceptable' };
   const scen = [
-    ['Aisha', 'asks AI for the key points of a journal article and some references for her EE, reads those sources, and writes her own summary with citations.', 'fine', 'Fine. The teacher should check she understands the material, and anything taken directly from the AI needs to be cited.', 'Scenario 1'],
-    ['Leo', 'asks AI for counter-arguments to his TOK essay claim, then investigates two of them himself.', 'fine', 'Fine, as long as he explores the other views properly. Presenting the AI\'s arguments, or a textbook\'s, as if they were his own would not be.', 'Scenario 2'],
-    ['Mei', 'asks AI for quotes for her History IA and copies them in with references, without reading the sources.', 'no', 'Not acceptable. She has to read and understand the sources before choosing what to quote, and her teacher may question her about them.', 'Scenario 3'],
-    ['Jun', 'asks AI to develop an Extended Essay research question for him.', 'no', 'Not acceptable. The IB says students should talk to their teacher, not AI. For the EE, once a subject and topic have been agreed with the supervisor, the student can ask AI for example questions and then work on them with their supervisor.', 'Scenario 4'],
-    ['Sam', 'gets AI to write a model of the exact essay he has been set, then adapts it.', 'dep', 'The IB says context matters, but this is generally not acceptable. It compares it to copying an essay from the internet or a friend. If he can explain the content in a viva (an oral conversation about his work) he may be able to submit it, and if he can\'t, it isn\'t acceptable.', 'Scenario 5'],
-    ['Grace', 'asks AI to write a paragraph or two as a model, then writes her own version.', 'dep', 'The IB says context matters, but this is generally acceptable. Her teacher should be careful with the final summarising paragraph, where much of the student\'s own thinking should show.', 'Scenario 6'],
-    ['Maya', 'writes her essay, then asks AI to rewrite it.', 'no', 'Generally not acceptable. The IB says the original essay should be marked, and teachers can use discretion in some cases, such as in-class work.', 'Scenario 7'],
-    ['Carlos', 'writes his Spanish assignment in English and uses AI to translate it for submission.', 'no', 'Not acceptable. The IB says this isn\'t acceptable for IB summative assessment, and in language acquisition subjects it isn\'t acceptable at all.', 'Scenario 8'],
-    ['Priya', 'asks AI for grammar and sentence suggestions on her Economics IA (not a full rewrite), keeps her original and tells her teacher.', 'dep', 'Generally acceptable unless there are marks for grammar and sentence quality, and she was open about it. If the AI improves the coherence of her argument it counts as a rewrite, which is the teacher\'s decision.', 'Scenario 9'],
-    ['Noah', 'asks AI to mark his IA draft and give him feedback before he hands it in.', 'dep', 'The IB says this is discouraged for IB assessment, because it goes against the one set of written feedback rule. In the EE, for example, your supervisor reads and comments on one draft only. AI feedback can be useful for learning in work that isn\'t being assessed.', 'Scenario 10'],
-    ['Zara', 'asks AI to write her EE reflection and submits it unchanged.', 'no', 'Not acceptable. A reflection has to be the student\'s own evaluation of their learning, and the IB treats an AI-written one as fabrication.', 'Scenario 11'],
-    ['Tom', 'uses AI to brainstorm ideas, then tells his teacher he didn\'t use AI.', 'no', 'Not acceptable, even though the brainstorming itself was fine. Students have to disclose their AI use to the teacher who authenticates their work.', 'Scenario 12'],
-    ['Ella', 'asks AI to generate an essay structure for her TOK essay, fills it in herself and says so when she submits it.', 'fine', 'Generally fine, because she acknowledged it. If her teacher has doubts, the IB suggests a viva.', 'Scenario 13'],
+    ['Aisha', 'asks AI for the key points of a journal article and some references for her EE, reads those sources, and writes her own summary with citations.', 'fine', 'Fine. The teacher should check she understands the material, and anything taken directly from the AI needs to be cited.'],
+    ['Leo', 'asks AI for counter-arguments to his TOK essay claim, then investigates two of them himself.', 'fine', 'Fine, as long as he explores the other views properly. Presenting the AI\'s arguments, or a textbook\'s, as if they were his own would not be.'],
+    ['Mei', 'asks AI for quotes for her History IA and copies them in with references, without reading the sources.', 'no', 'Not acceptable. She has to read and understand the sources before choosing what to quote, and her teacher may question her about them.'],
+    ['Jun', 'asks AI to develop an Extended Essay research question for him.', 'no', 'Not acceptable. The IB says students should talk to their teacher, not AI. For the EE, once a subject and topic have been agreed with the supervisor, the student can ask AI for example questions and then work on them with their supervisor.'],
+    ['Sam', 'gets AI to write an example of the exact essay he has been set, then rewrites it in his own words.', 'no', 'Not acceptable. The IB says to treat this the same as finding an essay online, or borrowing a friend\'s, and using it for all your ideas. The academic integrity policy also warns that an example too close to your own task makes it easy to copy without meaning to. If a teacher suspects this, they may ask you to explain your essay in a viva (an oral conversation about your work), and if you can\'t show you understand it, it can be treated as plagiarism.'],
+    ['Grace', 'asks AI to write an example introduction so she can see what a good one looks like, then writes her own introduction in her own words.', 'fine', 'Fine. The IB compares this to looking at sample essays to get a sense of what a good introduction looks like. The rest of the essay, and especially her conclusion, still needs to show her own thinking and analysis, and she should say how she used AI.'],
+    ['Maya', 'writes her essay, then asks AI to rewrite it before she hands it in.', 'no', 'Not acceptable for IB work. The IB expects teachers to be strict with IB assessment tasks and to have students submit their original work, so her teacher would mark the original essay.'],
+    ['Carlos', 'writes his History IA in his first language and uses AI to translate it into English for submission.', 'no', 'Not acceptable. The IB certifies that you studied the subject in a particular language, so you can\'t write your work in one language and use AI to translate it for an IB assessment.'],
+    ['Priya', 'uses an AI tool to improve the grammar and sentences in her Spanish B written assessment.', 'no', 'Not acceptable. In language acquisition courses like Spanish B, marks are given for sentence structure, so the IB doesn\'t permit tools that improve your sentences. It only treats grammar help as acceptable when there are no marks for grammar and sentence quality.'],
+    ['Noah', 'asks AI to mark his IA draft and give him feedback before he hands it in.', 'no', 'Not acceptable for IB assessment. The IB discourages it because it goes against the one set of written feedback rule, and its summary table lists it as not acceptable for IB assessment. In the EE, for example, your supervisor reads and comments on one draft only. AI feedback can be useful for practice work that isn\'t being assessed.'],
+    ['Zara', 'asks AI to write her EE reflection and submits it unchanged.', 'no', 'Not acceptable. A reflection has to be the student\'s own evaluation of their learning, and the IB treats an AI-written one as fabrication.'],
+    ['Tom', 'uses AI to brainstorm ideas, then tells his teacher he didn\'t use AI.', 'no', 'Not acceptable, even though the brainstorming itself was fine. Students have to disclose their AI use to the teacher who authenticates their work.'],
+    ['Ella', 'asks AI to generate an essay structure for her TOK essay, fills it in herself and says so when she submits it.', 'fine', 'Fine, because she acknowledged it. The IB compares it to using sample essays or textbooks to get a framework. If her teacher has doubts, they may ask her to talk through her essay in a viva.'],
   ];
   const sortState = store.get('iswa-ai-sort') || {};
   const list = $('#scenList');
   function renderSort() {
     list.innerHTML = '';
     let answered = 0, match = 0;
-    scen.forEach(([name, text, ans, why, ref], i) => {
+    scen.forEach(([name, text, ans, why], i) => {
       const pick = sortState[i];
       const div = document.createElement('div'); div.className = 'scen';
       const q = document.createElement('p'); q.className = 'scen-q'; q.innerHTML = '<b>' + name + '</b> ' + text; div.appendChild(q);
       const ch = document.createElement('div'); ch.className = 'choices'; ch.setAttribute('role', 'group'); ch.setAttribute('aria-label', 'Your call for ' + name);
-      ['fine', 'no', 'dep'].forEach(k => {
+      ['fine', 'no'].forEach(k => {
         const b = document.createElement('button'); b.className = 'choice'; b.type = 'button'; b.textContent = LABEL[k];
         b.setAttribute('aria-pressed', pick === k ? 'true' : 'false');
         if (pick) b.disabled = true;
@@ -729,7 +732,7 @@ Can you explain how to read a confidence interval?</textarea></div>
       if (pick) {
         answered++; if (pick === ans) match++;
         const f = document.createElement('div'); f.className = 'feedback';
-        f.innerHTML = '<div class="verdict"><span class="mark">' + (pick === ans ? 'You agree with the IB.' : 'The IB sees this one differently.') + '</span> <span class="chip ' + ans + '">IB view: ' + LABEL[ans] + '</span></div><p>' + why + '</p><p class="ref">Evaluating 13 scenarios of AI in student coursework (IB, 2024), ' + ref + '</p>';
+        f.innerHTML = '<div class="verdict"><span class="mark">' + (pick === ans ? 'You agree with the IB.' : 'The IB sees this one differently.') + '</span> <span class="chip ' + ans + '">IB view: ' + LABEL[ans] + '</span></div><p>' + why + '</p>';
         div.appendChild(f);
       }
       list.appendChild(div);
@@ -739,16 +742,16 @@ Can you explain how to read a confidence interval?</textarea></div>
   }
   $('#sortReset').addEventListener('click', () => { Object.keys(sortState).forEach(k => delete sortState[k]); store.set('iswa-ai-sort', sortState); renderSort(); });
   renderSort();
-
+ 
   /* quiz */
   const quiz = [
-    ['Has the IB banned students from using AI?', ['Yes, for all assessed work', 'No, but it expects it to be used ethically and openly', 'Only for the Extended Essay'], 1, 'The IB will not ban AI. It wants students to be taught to use it ethically (Appendix 6.2, p. 53).'],
-    ['What should an in-text citation for AI include, according to the IB?', ['Just the name of the tool', 'Quotation marks, the prompt and the date', 'A screenshot of the chat'], 1, 'Appendix 6 says the in-text citation should use quotation marks and include the prompt given to the AI tool and the date the AI generated the text (p. 55).'],
-    ['You used AI to brainstorm, but none of its words are in your essay. What does the IB say is enough?', ['Nothing, because no AI text is in the essay', 'A short statement after the end of your work describing how you used AI', 'Putting the AI in your bibliography only'], 1, 'The IB\'s scenarios document says a short statement after the end of the work is sufficient. Effective citing and referencing (2025) adds that it should give enough detail, including your prompts, for a reader to understand how you used AI.'],
-    ['Should you paste your full AI chats into an appendix of your work?', ['Yes, always', 'Not normally, unless you\'re told to', 'Only for the Extended Essay'], 1, 'Effective citing and referencing (2025) says AI conversations should not normally be included in appendices unless instructed otherwise. Keep your prompts and chats anyway, in case your teacher asks to see them.'],
-    ['Can you use AI tools that improve your sentences in a language acquisition assessment?', ['Yes, if you cite them', 'Only for spelling', 'No, they are not permitted'], 2, 'In language acquisition, marks are awarded for sentence structure, so the use of such tools is not permitted (Appendix 6, p. 55).'],
-    ['Which referencing style does the IB require?', ['APA 7', 'Chicago', 'No particular style, but use one style consistently'], 2, 'The IB does not recommend one particular style. Any style is valid for IB assessment, as long as you choose one and use it consistently through your work (Effective citing and referencing, pp. 3 and 7). At ISWA we use APA 7.'],
-    ['AI gives you a statistic and you check it in a published report. What should you cite and reference?', ['Only the AI tool', 'The report you checked it in, and mention the AI in your methodology', 'Nothing, because it\'s a statistic'], 1, 'Effective citing and referencing (2025, p. 8) says the AI tool may be mentioned as part of the methodology, and the source used to verify its output should be cited and referenced. Always cite the actual source you found the material in.'],
+    ['Has the IB banned students from using AI?', ['Yes, for all assessed work', 'No, but it expects it to be used ethically and openly', 'Only for the Extended Essay'], 1, 'The IB will not ban AI. It wants students to be taught to use it ethically.'],
+    ['What should an in-text citation for AI include, according to the IB?', ['Just the name of the tool', 'Quotation marks, the prompt and the date', 'A screenshot of the chat'], 1, 'Appendix 6 says the in-text citation should use quotation marks and include the prompt given to the AI tool and the date the AI generated the text.'],
+    ['You used AI to brainstorm, but none of its words are in your essay. What does the IB say is enough?', ['Nothing, because no AI text is in the essay', 'A short statement after the end of your work describing how you used AI', 'Putting the AI in your bibliography only'], 1, 'The IB\'s scenarios document says a short statement after the end of the work is sufficient. The IB\'s citing guide adds that it should give enough detail, including your prompts, for a reader to understand how you used AI.'],
+    ['Should you paste your full AI chats into an appendix of your work?', ['Yes, always', 'Not normally, unless you\'re told to', 'Only for the Extended Essay'], 1, 'The IB\'s citing guide says AI conversations should not normally be included in appendices unless instructed otherwise. Keep your prompts and chats anyway, in case your teacher asks to see them.'],
+    ['Can you use AI tools that improve your sentences in a language acquisition assessment?', ['Yes, if you cite them', 'Only for spelling', 'No, they are not permitted'], 2, 'In language acquisition, marks are awarded for sentence structure, so the use of such tools is not permitted.'],
+    ['Which referencing style does the IB require?', ['APA 7', 'Chicago', 'No particular style, but use one style consistently'], 2, 'The IB does not recommend one particular style. Any style is valid for IB assessment, as long as you choose one and use it consistently through your work. At ISWA we use APA 7.'],
+    ['AI gives you a statistic and you check it in a published report. What should you cite and reference?', ['Only the AI tool', 'The report you checked it in, and mention the AI in your methodology', 'Nothing, because it\'s a statistic'], 1, 'The IB\'s citing guide says the AI tool may be mentioned as part of the methodology, and the source used to verify its output should be cited and referenced. Always cite the actual source you found the material in.'],
     ['What happens if your teacher isn\'t convinced your work is your own?', ['It can\'t be submitted to the IB', 'It\'s submitted with a mark deduction', 'The IB decides after marking'], 0, 'Appendix 6 says that if teachers aren\'t convinced the work is the student\'s own, it must not be submitted. If coursework isn\'t submitted, the IB won\'t award a grade in that subject.'],
   ];
   const qState = store.get('iswa-ai-quiz') || {};
@@ -782,7 +785,7 @@ Can you explain how to read a confidence interval?</textarea></div>
     prog.quiz = Object.keys(qState).length; prog.quizRight = right; drawProgress();
   }
   renderQuiz();
-
+ 
   /* citation builder */
   let style = 'apa';
   const LONG_M = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -800,8 +803,8 @@ Can you explain how to read a confidence interval?</textarea></div>
     if (style === 'apa') {
       inT = 'When prompted with “' + esc(prompt) + '” on ' + esc(longD) + ', ' + esc(tool) + ' responded that “' + esc(quote) + '” (' + esc(co) + ', ' + y + ').';
       const verTxt = ver ? ver.replace(/^\(|\)$/g, '') : (d ? LONG_M[d.m] + ' ' + d.d + ' version' : '[version]');
-      ref = esc(co) + '. (' + y + '). ' + esc(tool) + ' (' + esc(verTxt) + ') [Artificial intelligence system]. ' + esc(url);
-      note = 'This follows the APA 7 examples in the IB\'s Effective citing and referencing (2025). The IB asks for the prompt and the date in your in-text citation, so they go in your sentence.';
+      ref = esc(co) + '. (' + y + '). <i>' + esc(tool) + '</i> (' + esc(verTxt) + ') [Artificial intelligence system]. ' + esc(url);
+      note = 'This follows the APA 7 examples in the IB\'s Effective citing and referencing (IB, 2025a). The IB asks for the prompt and the date in your in-text citation, so they go in your sentence.';
     }
     $('#outIn').innerHTML = inT; $('#outRef').innerHTML = ref; $('#refLabel').textContent = refLab; $('#styleNote').textContent = note;
   }
@@ -812,7 +815,7 @@ Can you explain how to read a confidence interval?</textarea></div>
   }));
   $('#citeForm').addEventListener('input', buildCite);
   buildCite();
-
+ 
   /* statement builder */
   function joinList(a) { return a.length <= 1 ? a.join('') : a.slice(0, -1).join(', ') + ' and ' + a[a.length - 1]; }
   function buildStmt() {
@@ -834,7 +837,7 @@ Can you explain how to read a confidence interval?</textarea></div>
   $('#stmtForm').addEventListener('input', buildStmt);
   $('#stmtForm').addEventListener('change', buildStmt);
   buildStmt();
-
+ 
   /* copy */
   document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
     const el = document.getElementById(b.dataset.copy);
@@ -843,14 +846,14 @@ Can you explain how to read a confidence interval?</textarea></div>
     const fallback = () => { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected, press Ctrl+C'; setTimeout(() => { b.textContent = 'Copy'; }, 2500); };
     try { navigator.clipboard.writeText(txt).then(done, fallback); } catch (e) { fallback(); }
   }));
-
+ 
   /* spot */
   $('#spotBtn').addEventListener('click', () => {
     const a = $('#spotAns'); a.hidden = !a.hidden;
     $('#spotBtn').setAttribute('aria-expanded', String(!a.hidden));
     $('#spotBtn').textContent = a.hidden ? 'Show the problems' : 'Hide the problems';
   });
-
+ 
   /* tabs */
   const tabs = [...document.querySelectorAll('.tab')];
   function selectTab(t) {
@@ -862,7 +865,7 @@ Can you explain how to read a confidence interval?</textarea></div>
       if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { const n = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length]; selectTab(n); n.focus(); }
     });
   });
-
+ 
   /* checklist */
   const cls = store.get('iswa-ai-check') || {};
   const boxes = [...document.querySelectorAll('#clist input')];
@@ -875,6 +878,7 @@ Can you explain how to read a confidence interval?</textarea></div>
   clUpdate();
 })();
 </script>
-
+ 
 </body>
 </html>
+ 
